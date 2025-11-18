@@ -1,25 +1,21 @@
 nav {
     background-color: grey;
-    margin: 0;
 }
-h1, p, h2, a {
+.center {
     text-align: center;
 }
 ul {
     padding: 10px;
-    border : 2px rgb(255, 0, 0);
     list-style-type: none;
     background-color: #ffc549;
     background-color: #ffc549;
-    max-width: 80%;
-    margin-left: 10%;
     display: flex;
     justify-content: center;
 }
 
 .image-link {
     text-decoration: none;    /* no underline */
-    color: inherit;           /* text keeps normal color */
+    color: inherit;
 }
 
 .image-container {
@@ -32,18 +28,25 @@ ul {
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;        /* crops rather than stretches */
+    object-fit: cover;
     display: block;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.image-container:hover img{
+    transform: scale(1.05);
 }
 
 .image-text {
     position: absolute;
-    bottom: 50%;             /* change to top/left/right if you want */
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 10px black; /* makes text readable on any image */
+    text-shadow: 0 0 10px black; 
 }
 
 ul li a {
@@ -58,6 +61,7 @@ ul li a:hover {
 }
 body {
     font-family: "Times New Roman", Times, serif;
+    font-size: larger;
     background-color: #443f3f;
     color: #fcfcfc;
     margin: 0;   
