@@ -1,0 +1,389 @@
+/* Switzerland CSS File */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #9b1a1a;
+}
+h2 {
+  font-size: 28px;
+  color:#111010;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 20px;
+  color:#9b1a1a;
+  text-align: center;
+}
+h4 {
+  font-size: 16px;
+  color:#333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto 20px auto;
+  max-width: 800px;
+  text-align: center;
+  color: #000000;
+}
+a{ text-decoration: none; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5ec;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main nav bar on home page */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 20px 40px;
+}
+.main-nav{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+}
+.main-nav li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-nav img {
+  width: 150px;     
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover;   
+}
+
+.main-nav li a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-nav li a:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.main-nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.main-nav li a:hover {
+  transform: translateY(-8px);
+}
+
+/* Dropdown nav bar on induvidual pages */
+
+.navbar {     
+  padding: 20px 0;
+}
+
+
+.drop-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;         
+  margin: 0;                 
+}
+
+.drop-nav > li {
+  background-color: #9b1a1a;
+  padding: 20px 40px;
+  border-radius: 12px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.drop-nav > li:hover {
+  transform: scale(1.05);
+}
+
+.drop-nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #9b1a1a;
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #bc3939;
+}
+
+
+/* Swiss Home Page */
+iframe {
+  display: block;
+  margin:  auto;
+  border: 5px solid #9b1a1a;
+  border-radius: 12px;
+
+}
+
+/*Video section*/
+
+.video-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.video-container iframe {
+  border-radius: 10px; /* Adds rounded corners to the video */
+}
+
+.video-container button {
+  background-color: #850909;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-container button:hover {
+  background-color: #2a7f62;
+}
+
+/* Food Page */
+
+.food-profiles h4 {
+  text-align: left;
+  font-size: 30px;
+  color: #6c1313;
+}
+.food-profiles .ul {
+  border-radius: 12px;
+}
+
+.food-profiles li {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #444444;
+}
+
+.food-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+
+
+
+.food-profiles section {
+  background: #ffffff;
+  border: 6px solid #b03535;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 20px;  
+  display: grid;
+  grid-template-columns: 1.3fr 2fr; 
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+        "img title"
+        "img list";
+
+  gap: 20px;
+  align-items: stretch;
+}
+
+.food-profiles section img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  border-radius: 15px;    
+  display: block;
+  object-fit: contain;
+
+}
+
+
+/* Cities */
+
+.city-profiles h4 {
+  text-align: left;
+  font-size: 30px;
+  color: #6c1313;
+}
+.city-profiles .ul {
+  border-radius: 12px;
+}
+
+.city-profiles li {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #444444;
+}
+
+.city-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+
+
+
+.city-profiles section {
+  background: #ffffff;
+  border: 6px solid #b03535;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 20px;  
+  display: grid;
+  grid-template-columns: 1.3fr 2fr; 
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+        "img title"
+        "img list";
+
+  gap: 20px;
+  align-items: stretch;
+}
+
+.city-profiles section img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  border-radius: 15px;    
+  display: block;
+}
+
+
+/* Tourist Destinations */
+
+.tourist-profiles h4 {
+  text-align: left;
+  font-size: 30px;
+  color: #6c1313;
+}
+.tourist-profiles .ul {
+  border-radius: 12px;
+}
+
+.tourist-profiles li {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #444444;
+}
+
+.tourist-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+
+
+
+.tourist-profiles section {
+  background: #ffffff;
+  border: 6px solid #b03535;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 20px;  
+  display: grid;
+  grid-template-columns: 1.3fr 2fr; 
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+        "img title"
+        "img list";
+
+  gap: 20px;
+  align-items: stretch;
+}
+
+.tourist-profiles section img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  border-radius: 15px;    
+  display: block;
+}
+#funfacts {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border: 6px solid #b03535;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+#funfacts ul {
+  column-count: 2;           
+  column-gap: 60px;         
+  list-style-position: outside;
+  padding-left: 20px;       
+  margin: 0;
+}
+
