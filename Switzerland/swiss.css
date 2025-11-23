@@ -78,6 +78,25 @@ body {
   object-fit: cover;   
 }
 
+.main-nav li a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-nav li a:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.main-nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.main-nav li a:hover {
+  transform: translateY(-8px);
+}
 
 /* Dropdown nav bar on induvidual pages */
 
@@ -349,5 +368,22 @@ iframe {
   border-radius: 15px;    
   display: block;
 }
+#funfacts {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border: 6px solid #b03535;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
+
+#funfacts ul {
+  column-count: 2;           
+  column-gap: 60px;         
+  list-style-position: outside;
+  padding-left: 20px;       
+  margin: 0;
+}
 
