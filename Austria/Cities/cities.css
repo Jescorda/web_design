@@ -60,7 +60,7 @@ body {
 
 .city-box {
     position: relative;
-    border: 2px dashed grey;
+    border: 2px dashed #ffc549;
     border-radius: 6px;
     overflow: hidden;
     background-color: white;
