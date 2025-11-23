@@ -21,6 +21,14 @@
     border-radius: 5px;
 }
 
+.lone-img {
+    border-radius: 5px;
+    width: 98%;
+    height: 500px;   
+    object-fit: cover;
+    padding-left: 1%;
+}
+
 @media (max-width: 700px) {
     .grid-container {
         grid-template-columns: 1fr;

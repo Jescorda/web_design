@@ -14,7 +14,7 @@ ul {
 }
 
 .image-link {
-    text-decoration: none;    /* no underline */
+    text-decoration: none;
     color: inherit;
 }
 
@@ -61,7 +61,7 @@ ul li a:hover {
 }
 body {
     font-family: "Times New Roman", Times, serif;
-    font-size: larger;
+    font-size: x-large;
     background-color: #443f3f;
     color: #fcfcfc;
     margin: 0;   
