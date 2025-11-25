@@ -175,13 +175,13 @@ iframe {
 /*Video section*/
 
 .video-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;      
+  gap: 20px;                
   margin: 20px auto;
   max-width: 900px;
-}
-
-.video-container iframe {
-  border-radius: 10px; /* Adds rounded corners to the video */
 }
 
 .video-container button {
@@ -189,7 +189,6 @@ iframe {
   color: white;
   font-size: 1rem;
   padding: 10px 20px;
-  margin-top: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -199,6 +198,13 @@ iframe {
 .video-container button:hover {
   background-color: #2a7f62;
 }
+.video-container video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;  
+  overflow: hidden;      
+}
+
 
 /* Food Page */
 
