@@ -7,8 +7,7 @@ nav {
 ul {
     padding: 10px;
     list-style-type: none;
-    background-color: #ffc549;
-    background-color: #ffc549;
+    background-color: #eeeeee;
     display: flex;
     justify-content: center;
 }
@@ -67,3 +66,64 @@ body {
     margin: 0;   
 }
 
+footer {
+      background: #4e4e4e;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+  }
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-buttons button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+.footer-buttons button:hover {
+    background: #555;
+}
+
+
+form {
+    background: #686363;
+    padding: 2%;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button, input[type="submit"] {
+    background-color: #313030;
+    color: rgb(158, 158, 158);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#p2 {
+    display: inline;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #000000;
+}

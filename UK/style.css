@@ -1,10 +1,12 @@
 body{
-    background-color: white;
+      background-image: url("../Images/Flag_of_the_United_Kingdom.svg");
+  background-size: 115%;
+  background-position: center; 
     color: black;
 }
 nav {
-    background-color: blue;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .text-block {
     background-color: rgb(228, 218, 218);
@@ -42,3 +44,4 @@ nav {
         text-align: center;
     }
 }
+
