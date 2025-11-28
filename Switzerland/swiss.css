@@ -393,3 +393,24 @@ iframe {
   margin: 0;
 }
 
+/* Footer */
+#footer-layout ul {
+  padding: 10px;
+  list-style-type: none;
+  
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#footer-layout ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: x-large; 
+}
+
+#footer-layout ul li a:hover {
+  background-color: #850909
+}
