@@ -48,6 +48,13 @@ ul {
     text-shadow: 0 0 10px black; 
 }
 
+.side-image {
+    max-width: 1300px;  
+    height: auto;       
+    display: block;
+    margin: 10px auto;  
+}
+
 ul li a {
     display: block;
     color: rgb(68, 67, 67);
